@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TONNY — Про нас</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      padding: 3cm;
+      box-sizing: border-box;
+      background: url('wagons.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .sidebar {
+      width: 18%;
+      background-color: #f8f8f8;
+      padding: 20px;
+      position: fixed;
+      height: calc(100vh - 6cm);
+      overflow-y: auto;
+      border-right: 1px solid #ddd;
+      left: 3cm;
+      top: 3cm;
+      box-sizing: border-box;
+    }
+    .sidebar h3 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    .work-schedule {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .work-schedule-row {
+      display: flex;
+      justify-content: space-between;
+      line-height: 1.8;
+    }
+    .sidebar p {
+      margin-top: 90px;
+      line-height: 2;
+    }
+    .content {
+      margin-left: calc(18% + 60px);
+      width: calc(100% - 18% - 6cm - 60px);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+    .nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: orange;
+      margin-right: 30px;
+    }
+    .nav a {
+      color: #fff;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+    .about-section {
+      margin-top: 30px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .about-section h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .about-section p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h3>Графік роботи</h3>
+    <div class="work-schedule">
+      <div class="work-schedule-row"><span>Понеділок</span><span>08:00–18:00</span></div>
+      <div class="work-schedule-row"><span>Вівторок</span><span>08:00–18:00</span></div>
+      <div class="work-schedule-row"><span>Середа</span><span>08:00–18:00</span></div>
+      <div class="work-schedule-row"><span>Четвер</span><span>08:00–18:00</span></div>
+      <div class="work-schedule-row"><span>Пʼятниця</span><span>08:00–18:00</span></div>
+      <div class="work-schedule-row"><span>Субота</span><span>вихідний</span></div>
+      <div class="work-schedule-row"><span>Неділя</span><span>вихідний</span></div>
+    </div>
+
+    <h3 style="margin-top: 90px;">Контакти</h3>
+    <p style="line-height: 2.2;">
+      м. Львів, вул. Ґрунтова, 1<br>
+      +380 (63) 334-78-45<br>
+      +380 (97) 000-06-05
+    </p>
+  </div>
+
+  <div class="content">
+    <div class="nav">
+      <div class="logo">TONNY</div>
+      <a href="index.html">ГОЛОВНА</a>
+      <a href="catalog.html">ТОВАРИ ТА ПОСЛУГИ</a>
+      <a href="about.html">ПРО НАС</a>
+    </div>
+
+    <div class="about-section">
+      <h2>TONNY — ваш надійний постачальник щебеню у Львові</h2>
+      <p><strong>Компанія TONNY</strong> — це надійний постачальник гранітного щебеню, піску та відсіву з власних кар’єрів. Ми здійснюємо повний цикл — від видобутку до доставки кінцевому споживачу.</p>
+      <p>Наші виробничі потужності включають <strong>сучасну спецтехніку, контроль якості продукції</strong> та сертифікацію відповідно до норм радіаційної безпеки (1-й клас). Завдяки власному транспорту ми забезпечуємо <strong>доставку залізничним та автомобільним транспортом</strong> по Львову та області, а також надаємо можливість самовивозу.</p>
+      <p>TONNY працює <strong>без посередників</strong> — напряму з кар’єру до клієнта, що дозволяє тримати конкурентні ціни та гарантувати стабільну якість і наявність матеріалу.</p>
+      <p><strong>Наша продукція</strong> відзначається високою міцністю, морозостійкістю, водостійкістю та екологічністю. Продаємо як <strong>на вагу, так і фасовано в мішках по 35 кг</strong>.</p>
+      <p><strong>Сфери застосування:</strong> бетонування, фундаментні роботи, дорожнє будівництво, дренаж, ландшафтний дизайн, благоустрій.</p>
+      <p><strong>Наша команда</strong> — це фахівці з великим досвідом у галузі видобутку та логістики, які працюють на результат і довіру наших клієнтів.</p>
+    </div>
+  </div>
+</body>
+</html>

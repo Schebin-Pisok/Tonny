@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TONNY — Головна</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      padding: 3cm;
+      box-sizing: border-box;
+      background: url('wagons.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .sidebar {
+      width: 18%;
+      background-color: #f8f8f8;
+      padding: 20px;
+      position: fixed;
+      height: calc(100vh - 6cm);
+      overflow-y: auto;
+      border-right: 1px solid #ddd;
+      left: 3cm;
+      top: 3cm;
+      box-sizing: border-box;
+    }
+    .sidebar h3 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    .work-schedule {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .work-schedule-row {
+      display: flex;
+      justify-content: space-between;
+      line-height: 1.8;
+    }
+    .sidebar p {
+      margin-top: 90px;
+      line-height: 2;
+    }
+    .content {
+      margin-left: calc(18% + 60px);
+      width: calc(100% - 18% - 6cm - 60px);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+    .nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: orange;
+      margin-right: 30px;
+    }
+    .nav a {
+      color: #fff;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+    .section {
+      margin-top: 30px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .section h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .section p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h3>Графік роботи</h3>
+    <div class="work-schedule">
+      <div class="work-schedule-row"><span>Понеділок</span><span>08:00–18:00</span></div>
+      <div class="work-schedule-row"><span>Вівторок</span><span>08:00–18:00</span></div>
+      <div class="work-schedule-row"><span>Середа</span><span>08:00–18:00</span></div>
+      <div class="work-schedule-row"><span>Четвер</span><span>08:00–18:00</span></div>
+      <div class="work-schedule-row"><span>Пʼятниця</span><span>08:00–18:00</span></div>
+      <div class="work-schedule-row"><span>Субота</span><span>вихідний</span></div>
+      <div class="work-schedule-row"><span>Неділя</span><span>вихідний</span></div>
+    </div>
+
+    <h3 style="margin-top: 90px;">Контакти</h3>
+    <p style="line-height: 2.2;">
+      м. Львів, вул. Ґрунтова, 1<br>
+      +380 (63) 334-78-45<br>
+      +380 (97) 000-06-05
+    </p>
+  </div>
+
+  <div class="content">
+    <div class="nav">
+      <div class="logo">TONNY</div>
+      <a href="index.html">ГОЛОВНА</a>
+      <a href="catalog.html">ТОВАРИ ТА ПОСЛУГИ</a>
+      <a href="about.html">ПРО НАС</a>
+    </div>
+
+    <div class="section">
+      <h2>TONNY — ваш надійний постачальник щебеню у Львові</h2>
+      <p><strong>Компанія TONNY</strong> — це надійний постачальник гранітного щебеню, піску та відсіву з власних кар’єрів. Ми здійснюємо повний цикл — від видобутку до доставки кінцевому споживачу.</p>
+      <p>Наші виробничі потужності включають <strong>сучасну спецтехніку, контроль якості продукції</strong> та сертифікацію відповідно до норм радіаційної безпеки (1-й клас).</p>
+    </div>
+
+    <div class="section">
+      <h2>Загальна інформація</h2>
+      <p>TONNY — це компанія повного циклу. Маємо власні кар'єри, навантажувальну техніку, залізничний та автомобільний транспорт. Вся продукція відповідає високим стандартам міцності, морозостійкості, екологічності.</p>
+      <p>Ми продаємо щебінь як на вагу, так і фасовано в мішках.</p>
+    </div>
+
+    <div class="section">
+      <h2>Сфера застосування</h2>
+      <p>Продукція TONNY широко використовується для:</p>
+      <ul>
+        <li>
+    <strong>Бетонування, фундаментні роботи</strong><br>
+    <img src="gallery7.jpg" alt="Бетонування" style="width: 30%; margin-right: 10px;">
+    <img src="gallery10.jpg" alt="Фундаментні роботи" style="width: 30%;">
+  </li>
+  <li>
+    <strong>Дорожнє будівництво</strong><br>
+    <img src="gallery8.jpg" alt="Дорожнє будівництво" style="width: 30%; margin-right: 10px;">
+    <img src="gallery9.jpg" alt="Дорожнє будівництво" style="width: 30%;">
+  </li>
+  <li>
+    <strong>Дренаж</strong><br>
+    <img src="gallery11.jpg" alt="Дренаж" style="width: 30%;">
+  </li>
+  <li>
+    <strong>Ландшафтний дизайн</strong><br>
+    <img src="gallery12.jpg" alt="Ландшафтний дизайн" style="width: 30%;">
+  </li>
+  <li>
+    <strong>Благоустрій</strong><br>
+    <img src="gallery13.jpg" alt="Благоустрій" style="width: 30%;">
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

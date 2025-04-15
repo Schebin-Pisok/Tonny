@@ -1,0 +1,126 @@
+/* Загальні стилі для сайту */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  padding: 3cm;
+  box-sizing: border-box;
+  background: url('images/galarery1.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Сайдбар для графіка роботи і контактів */
+.sidebar {
+  width: 18%;
+  background-color: #f8f8f8;
+  padding: 20px;
+  position: fixed;
+  height: calc(100vh - 6cm);
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+  left: 3cm;
+  top: 3cm;
+  box-sizing: border-box;
+}
+
+.sidebar h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.work-schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.work-schedule-row {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.8;
+}
+
+.sidebar p {
+  margin-top: 90px;
+  line-height: 2;
+}
+
+/* Контентна частина */
+.content {
+  margin-left: calc(18% + 60px);
+  width: calc(100% - 18% - 6cm - 60px);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Навігація */
+.nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: orange;
+  margin-right: 30px;
+}
+
+.nav a {
+  color: #fff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+/* Стилі для секції "Про нас" */
+.about-section {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.about-section p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Стилі для зображень у секціях */
+.about-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Стилі для списку сфер застосування */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+ul li img {
+  max-width: 30%;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+/* Фон для головної сторінки */
+body {
+  background: url('images/galarery1.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
