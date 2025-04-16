@@ -1,158 +1,83 @@
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  display: flex;
-  padding: 3cm;
-  box-sizing: border-box;
-  background: url('wagons.jpg') no-repeat center center fixed;
-  background-size: cover;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-/* Сайдбар для графіка роботи і контактів */
+/* Контейнер для всіх елементів */
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+/* Ліва колонка (Графік роботи та Контакти) */
 .sidebar {
-  width: 18%;
-  background-color: #f8f8f8;
-  padding: 20px;
-  position: fixed;
-  height: calc(100vh - 6cm);
-  overflow-y: auto;
-  border-right: 1px solid #ddd;
-  left: 3cm;
-  top: 3cm;
-  box-sizing: border-box;
+  width: 25%;
+  padding: 15px;
+  background-color: #fff;
+  margin-right: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar h3 {
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-.work-schedule {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.work-schedule-row {
-  display: flex;
-  justify-content: space-between;
-  line-height: 1.8;
-}
-
-.sidebar p {
-  margin-top: 90px;
-  line-height: 2;
-}
-
-/* Контентна частина */
-.content {
-  margin-left: calc(18% + 60px);
-  width: calc(100% - 18% - 6cm - 60px);
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* Навігація */
-.nav {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-}
-
-.nav .logo {
-  font-size: 24px;
+.working-hours h2, .contact-info h3 {
+  font-size: 18px;
   font-weight: bold;
-  color: orange;
-  margin-right: 30px;
+  margin-bottom: 10px;
 }
 
-.nav a {
-  color: #fff;
-  margin-right: 15px;
-  text-decoration: none;
+.working-hours ul {
+  list-style: none;
+  padding: 0;
 }
 
-/* Стилі для секції "Про нас" */
-.about-section {
-  margin-top: 30px;
-  background: rgba(255, 255, 255, 0.95);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+.working-hours li {
+  font-size: 14px;
 }
 
-.about-section h2 {
-  margin-top: 0;
-  color: #333;
+.contact-info p {
+  font-size: 14px;
 }
 
-.about-section p {
-  line-height: 1.8;
+/* Блок з товарними елементами */
+.product-list {
+  width: 70%;
+}
+
+.product-item {
+  background-color: #fff;
+  padding: 15px;
   margin-bottom: 20px;
-}
-
-/* Стилі для зображень у секціях */
-.about-section img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 20px;
-}
-
-/* Стилі для списку сфер застосування */
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-ul li {
-  margin-bottom: 20px;
-}
-
-ul li img {
-  max-width: 30%;
-  margin-right: 10px;
-  display: inline-block;
-}
-
-/* Стилі для товарів та послуг */
-.section {
-  margin-top: 30px;
-  background: rgba(255, 255, 255, 0.95);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.product {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  margin-bottom: 30px;
 }
 
-.product-text {
-  flex: 1;
+.product-item img {
+  width: 150px;
+  height: auto;
+}
+
+.product-details {
   padding-left: 20px;
 }
 
-.product-image {
-  flex: 1;
+.product-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
 }
 
-.product-image img {
-  max-width: 100%;
-  height: auto;
+.product-item ul {
+  list-style: none;
+  padding: 0;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+.product-item li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.product-item p {
+  font-size: 14px;
+  margin-bottom: 10px;
 }
