@@ -3,120 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TONNY — Товари та послуги</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      padding: 3cm;
-      box-sizing: border-box;
-      background: url('wagons.jpg') no-repeat center center fixed;
-      background-size: cover;
-    }
-    .sidebar {
-      width: 18%;
-      background-color: #f8f8f8;
-      padding: 20px;
-      position: fixed;
-      height: calc(100vh - 6cm);
-      overflow-y: auto;
-      border-right: 1px solid #ddd;
-      left: 3cm;
-      top: 3cm;
-      box-sizing: border-box;
-    }
-    .sidebar h3 {
-      margin-top: 30px;
-      margin-bottom: 15px;
-    }
-    .work-schedule {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .work-schedule-row {
-      display: flex;
-      justify-content: space-between;
-      line-height: 1.8;
-    }
-    .sidebar p {
-      margin-top: 90px;
-      line-height: 2;
-    }
-    .content {
-      margin-left: calc(18% + 60px);
-      width: calc(100% - 18% - 6cm - 60px);
-      padding: 20px;
-      box-sizing: border-box;
-    }
-    .nav {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-    }
-    .nav .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: orange;
-      margin-right: 30px;
-    }
-    .nav a {
-      color: #fff;
-      margin-right: 15px;
-      text-decoration: none;
-    }
-    .product-section {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      margin-top: 30px;
-    }
-    .product-card {
-      width: calc(50% - 15px);
-      background-color: #fff;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      padding: 20px;
-        }
-    .product-card h3 {
-      margin-top: 10px;
-      font-size: 18px;
-    }
-    .product-card p {
-      font-size: 14px;
-    }
-    .product-card img {
-      width: 100%;
-      height: auto;
-      order: 2;
-    }
-  </style>
+  <title>ТОВАРИ ТА ПОСЛУГИ</title>
 </head>
 <body>
-  <div class="sidebar">
-    <h3>Графік роботи</h3>
-    <div class="work-schedule">
-      <div class="work-schedule-row"><span>Понеділок</span><span>08:00–18:00</span></div>
-      <div class="work-schedule-row"><span>Вівторок</span><span>08:00–18:00</span></div>
-      <div class="work-schedule-row"><span>Середа</span><span>08:00–18:00</span></div>
-      <div class="work-schedule-row"><span>Четвер</span><span>08:00–18:00</span></div>
-      <div class="work-schedule-row"><span>Пʼятниця</span><span>08:00–18:00</span></div>
-      <div class="work-schedule-row"><span>Субота</span><span>вихідний</span></div>
-      <div class="work-schedule-row"><span>Неділя</span><span>вихідний</span></div>
+  <header>
+    <!-- Тут твій заголовок і меню -->
+  </header>
+  <div class="container">
+    <!-- Ліва колонка (Графік роботи та Контакти) -->
+    <div class="sidebar">
+      <div class="working-hours">
+        <h2>Графік роботи</h2>
+        <ul>
+          <li>Понеділок: 08:00–18:00</li>
+          <li>Вівторок: 08:00–18:00</li>
+          <li>Середа: 08:00–18:00</li>
+          <li>Четвер: 08:00–18:00</li>
+          <li>П’ятниця: 08:00–18:00</li>
+          <li>Субота: вихідний</li>
+          <li>Неділя: вихідний</li>
+        </ul>
+      </div>
+      <div class="contact-info">
+        <h3>Контакти</h3>
+        <p>м. Львів, вул. Ґрунтова, 1</p>
+        <p>+380 (63) 334-78-45</p>
+        <p>+380 (97) 000-06-05</p>
+      </div>
     </div>
-
-    <h3 style="margin-top: 90px;">Контакти</h3>
-    <p style="line-height: 2.2;">
-      м. Львів, вул. Ґрунтова, 1<br>
-      +380 (63) 334-78-45<br>
-      +380 (97) 000-06-05
-    </p>
-  </div>
 
  <div class="section">
   <h2>Товари та послуги</h2>
@@ -131,6 +46,22 @@
       <img src="product1.jpg" alt="Щебінь 2x5" style="width: 100%;">
     </div>
   </div>
+<div class="product-list">
+      <div class="product-item">
+        <img src="image1.jpg" alt="Щебінь 20-40 мм">
+        <div class="product-details">
+          <h3>Щебінь 20-40 мм</h3>
+          <p>На сьогодні цей вид щебеню є найбільш затребуваним в будівельній індустрії України...</p>
+          <ul>
+            <li>Лещадність: 18.3%</li>
+            <li>Насипна щільність: 1320 кг/м³</li>
+            <li>Міцність: 1400</li>
+            <li>Морозостійкість: F-300</li>
+            <li>Ціна: 675 грн/т</li>
+            <li>Фасований: 50 грн/мішок (35 кг+)</li>
+          </ul>
+        </div>
+      </div>
 
   <!-- Фракція 5x20 -->
   <div class="product">
