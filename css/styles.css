@@ -38,3 +38,21 @@ footer {
   background-color: #eee;
   margin-top: 40px;
 }
+.product-block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.product-info {
+  flex: 1;
+  max-width: 60%;
+}
+
+.product-image img {
+  width: 300px; /* або інший бажаний розмір */
+  height: auto;
+  border-radius: 8px;
+}
