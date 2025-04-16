@@ -52,7 +52,7 @@ footer {
 }
 
 .product-image img {
-  width: 300px; /* або інший бажаний розмір */
+  width: 300px;
   height: auto;
   border-radius: 8px;
 }
