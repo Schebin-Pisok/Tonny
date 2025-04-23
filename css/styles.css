@@ -124,3 +124,50 @@ body {
   background-size: cover;
 }
 
+/* Стилі для товарних карток */
+.product-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(50% - 15px);
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px; /* Для відступу між картками */
+}
+
+/* Зображення в товарних картках */
+.product-card img {
+  width: 40%;  /* Зменшити, якщо хочеш більше місця для тексту */
+  height: auto;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+/* Інформація про товар (зліва від зображення) */
+.product-card .product-info {
+  flex: 1;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.product-card p {
+  font-size: 14px;
+}
+
+/* Адаптивні стилі для мобільних пристроїв */
+@media (max-width: 768px) {
+  .product-card {
+    flex-direction: column;  /* Вертикальне розташування на малих екранах */
+  }
+
+  .product-card img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
