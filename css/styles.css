@@ -5,7 +5,7 @@ body {
   display: flex;
   padding: 3cm;
   box-sizing: border-box;
-  background: url('images/galarery1.jpg') no-repeat center center fixed;
+  background: url('images/gallery1.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -120,7 +120,7 @@ ul li img {
 
 /* Фон для головної сторінки */
 body {
-  background: url('images/galarery1.jpg') no-repeat center center fixed;
+  background: url('images/gallery1.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
