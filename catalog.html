@@ -3,144 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Товари та послуги</title>
+  <title>TONNY — Товари та послуги</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
-    /* Скидаємо відступи по замовчуванню */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       display: flex;
+      padding: 3cm;
       box-sizing: border-box;
       background: url('images/gallery1.jpg') no-repeat center center fixed;
       background-size: cover;
     }
-
-    /* Фіксоване верхнє меню */
-    .nav {
+    .sidebar {
+      width: 18%;
+      background-color: #f8f8f8;
+      padding: 20px;
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 60px;            /* висота меню */
+      height: calc(100vh - 6cm);
+      overflow-y: auto;
+      border-right: 1px solid #ddd;
+      left: 3cm;
+      top: 3cm;
+      box-sizing: border-box;
+    }
+    .sidebar h3 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    .work-schedule {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .work-schedule-row {
+      display: flex;
+      justify-content: space-between;
+      line-height: 1.8;
+    }
+    .sidebar p {
+      margin-top: 90px;
+      line-height: 2;
+    }
+    .content {
+      margin-left: calc(18% + 60px);
+      width: calc(100% - 18% - 6cm - 60px);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .nav {
       background-color: #333;
       color: #fff;
       padding: 10px 20px;
       display: flex;
       align-items: center;
-      z-index: 1000;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
-
+    .nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: orange;
+      margin-right: 30px;
+    }
     .nav a {
-      color: white;
+      color: #fff;
+      margin-right: 15px;
       text-decoration: none;
-      padding: 10px 20px;
-      margin: 0 10px;
-      font-size: 16px;
     }
-
-    .nav a:hover {
-      background-color: #575757;
+    .product-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
     }
-
-    /* Відступ для контенту під меню */
-    .content {
-      margin-left: calc(18% + 60px);
-      margin-top: 80px;        /* збільшений на висоту .nav */
-      width: calc(100% - 18% - 6cm - 60px);
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    /* Сайдбар теж зсуваємо вниз на висоту меню */
-    .sidebar {
-      position: fixed;
-      top: 60px;               /* під .nav */
-      left: 3cm;
-      width: 18%;
-      height: calc(100vh - 60px);
-      background-color: #f8f8f8;
-      padding: 20px;
-      overflow-y: auto;
-      border-right: 1px solid #ddd;
-      box-sizing: border-box;
-    }
-
-    /* Основні стилі для контенту */
-    .product-list {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .product-item {
-      background-color: white;
-      padding: 20px;
-      border: 1px solid #ddd;
+    .product-card {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      background-color: #fff;
       border-radius: 8px;
-      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
     }
-
-    .product-item img {
-      max-width: 100%;
+    .product-card img {
+      width: 50%;
       height: auto;
-      border-radius: 4px;
+      border-radius: 8px;
+      margin-left: 20px;
+      object-fit: cover;
     }
-
-    .product-item h3 {
+    .product-card .product-info {
+      flex: 1;
+    }
+    .product-card h3 {
       margin-top: 10px;
       font-size: 18px;
-      color: #333;
     }
-
-    .product-item p {
+    .product-card p {
       font-size: 14px;
       color: #666;
     }
-
-    /* Стилі для футера */
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
+    @media (max-width: 768px) {
+      .product-card {
+        flex-direction: column;
+      }
+      .product-card img {
+        width: 30%;
+        margin-left: 0;
+      }
     }
   </style>
 </head>
 <body>
-
-  <!-- Фіксоване меню -->
-  <div class="nav">
-    <a href="#home">ГОЛОВНА</a>
-    <a href="#products">ТОВАРИ ТА ПОСЛУГИ</a>
-    <a href="#about">ПРО НАС</a>
-  </div>
-
-  <!-- Сайдбар з графіком та контактами -->
   <div class="sidebar">
     <h3>Графік роботи</h3>
-    <ul>
-      <li>Понеділок - П'ятниця: 9:00 - 18:00</li>
-      <li>Субота: 10:00 - 15:00</li>
-      <li>Неділя: вихідний</li>
-    </ul>
+    <div class="work-schedule">
+      <div class="work-schedule-row"><span>Понеділок</span><span>08:00–18:00</span></div>
+      <div class="work-schedule-row"><span>Вівторок</span><span>08:00–18:00</span></div>
+      <div class="work-schedule-row"><span>Середа</span><span>08:00–18:00</span></div>
+      <div class="work-schedule-row"><span>Четвер</span><span>08:00–18:00</span></div>
+      <div class="work-schedule-row"><span>Пʼятниця</span><span>08:00–18:00</span></div>
+      <div class="work-schedule-row"><span>Субота</span><span>вихідний</span></div>
+      <div class="work-schedule-row"><span>Неділя</span><span>вихідний</span></div>
+    </div>
 
-    <h3>Контакти</h3>
-    <ul>
-      <li>Телефон: +380 (63) 334-78-45</li>
-      <li>Email: info@tonny.com</li>
-      <li>Адреса: вул. Ґрунтова 1, Львів</li>
-    </ul>
+    <h3 style="margin-top: 90px;">Контакти</h3>
+    <p style="line-height: 2.2;">
+      м. Львів, вул. Ґрунтова, 1<br>
+      +380 (63) 334-78-45<br>
+      +380 (97) 000-06-05
+    </p>
   </div>
 
-  <!-- Основний контент -->
   <div class="content">
-    <h1>Товари та послуги</h1>
-    <div class="product-list">
+    <div class="nav">
+      <div class="logo">TONNY</div>
+      <a href="index.html">ГОЛОВНА</a>
+      <a href="catalog.html">ТОВАРИ ТА ПОСЛУГИ</a>
+      <a href="about.html">ПРО НАС</a>
+    </div>
 
     <div class="product-section">
       <div class="product-card">
