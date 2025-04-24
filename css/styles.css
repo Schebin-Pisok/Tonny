@@ -50,6 +50,7 @@ body {
   margin-left: calc(18% + 60px);
   width: calc(100% - 18% - 6cm - 60px);
   padding: 20px;
+  position: fixed;
   box-sizing: border-box;
 }
 
