@@ -60,12 +60,6 @@ body {
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .nav .logo {
@@ -128,7 +122,6 @@ ul li img {
 body {
   background: url('images/gallery1.jpg') no-repeat center center fixed;
   background-size: cover;
-  padding-top: 60px; /* Відступ для фіксованої навігації */
 }
 
 /* Стилі для товарних карток */
