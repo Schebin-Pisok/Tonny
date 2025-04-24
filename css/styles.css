@@ -9,9 +9,9 @@ body {
   background-size: cover;
 }
 
-/* Сайдбар */
+/* Сайдбар для графіка роботи і контактів */
 .sidebar {
-  width: 15%; /* було 18% */
+  width: 18%;
   background-color: #f8f8f8;
   padding: 20px;
   position: fixed;
@@ -23,37 +23,130 @@ body {
   box-sizing: border-box;
 }
 
-/* Контент */
+.sidebar h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.work-schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.work-schedule-row {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.8;
+}
+
+.sidebar p {
+  margin-top: 90px;
+  line-height: 2;
+}
+
+/* Контентна частина */
 .content {
-  margin-left: calc(15% + 60px); /* було 18% */
-  width: calc(100% - 15% - 6cm - 60px); /* збільшена ширина */
+  margin-left: calc(18% + 60px);
+  width: calc(100% - 18% - 6cm - 60px);
   padding: 20px;
   box-sizing: border-box;
 }
 
-/* Товарні картки */
+/* Навігація */
+.nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: orange;
+  margin-right: 30px;
+}
+
+.nav a {
+  color: #fff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+/* Стилі для секції "Про нас" */
+.about-section {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.about-section p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Стилі для зображень у секціях */
+.about-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Стилі для списку сфер застосування */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+ul li img {
+  max-width: 30%;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+/* Фон для головної сторінки */
+body {
+  background: url('images/gallery1.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Стилі для товарних карток */
 .product-card {
-  width: 100%; /* було 50% - 15px */
-  max-width: 900px;
-  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(50% - 15px);
   background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  margin-bottom: 20px; /* Для відступу між картками */
 }
 
-/* Зображення в картці */
+/* Зображення в товарних картках */
 .product-card img {
-  width: 35%; /* або 30% якщо хочеш більше тексту */
+  width: 40%;  /* Зменшити, якщо хочеш більше місця для тексту */
   height: auto;
   border-radius: 8px;
+  margin-left: 20px;
 }
 
-/* Інформація про товар */
+/* Інформація про товар (зліва від зображення) */
 .product-card .product-info {
   flex: 1;
 }
