@@ -31,13 +31,13 @@ body {
 .work-schedule {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 16px;
 }
 
 .work-schedule-row {
   display: flex;
   justify-content: space-between;
-  line-height: 1.0;
+  line-height: 1.8;
 }
 
 .sidebar p {
@@ -152,8 +152,8 @@ body {
 }
 
 .product-card h3 {
-  margin-top: 20px;
-  font-size: 28px;
+  margin-top: 10px;
+  font-size: 18px;
 }
 
 .product-card p {
