@@ -24,24 +24,24 @@ body {
 }
 
 .sidebar h3 {
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .work-schedule {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 16px;
 }
 
 .work-schedule-row {
   display: flex;
   justify-content: space-between;
-  line-height: 1.0;
+  line-height: 1.8;
 }
 
 .sidebar p {
-  margin-top: 40px;
+  margin-top: 90px;
   line-height: 2;
 }
 
@@ -60,6 +60,12 @@ body {
   padding: 10px 20px;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .nav .logo {
@@ -122,6 +128,7 @@ ul li img {
 body {
   background: url('images/gallery1.jpg') no-repeat center center fixed;
   background-size: cover;
+  padding-top: 60px; /* Відступ для фіксованої навігації */
 }
 
 /* Стилі для товарних карток */
