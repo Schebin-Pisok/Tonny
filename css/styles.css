@@ -46,8 +46,8 @@
       line-height: 1.4;
     }
     .content {
-      margin-left: calc(13% + 60px);
-      width: calc(100% - 13% - 6cm - 60px);
+      margin-left: calc(18% + 30px);
+      width: calc(100% - 18% - 6cm - 30px);
       padding: 20px;
       box-sizing: border-box;
     }
